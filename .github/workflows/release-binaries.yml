@@ -3,7 +3,9 @@ name: Release binaries
 # Built with Node's Single Executable Applications (SEA) feature: each OS in
 # the matrix injects the CLI bundle into ITS OWN native node binary, since SEA
 # injection embeds a real platform Node runtime (no cross-compiling from one
-# host). Triggered by pushing a `v*` tag, e.g. `git tag v0.2.0 && git push --tags`.
+# host). Covers Linux x64, Windows x64 and macOS arm64 (Apple Silicon) — see
+# the macos-latest matrix entry below for why there's no macOS x64 binary.
+# Triggered by pushing a `v*` tag, e.g. `git tag v0.2.0 && git push --tags`.
 on:
   push:
     tags: ["v*"]
@@ -22,8 +24,9 @@ jobs:
             asset: fitgate-windows-x64.zip
           - os: macos-latest # arm64 (Apple Silicon) runner
             asset: fitgate-macos-arm64.tar.gz
-          - os: macos-15-large # x64 (Intel) runner — macos-13 was retired from GitHub's fleet
-            asset: fitgate-macos-x64.tar.gz
+            # No Intel (x64) macOS binary: GitHub's free hosted runners are
+            # Apple-Silicon-only now: an x64 Mac runner needs the paid
+            # "larger runners" tier. Intel Mac users can still `npm i -g fitgate`.
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
