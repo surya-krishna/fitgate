@@ -1,0 +1,6 @@
+{
+  "hook_event_name": "preToolUse",
+  "cwd": "/Users/dev/app",
+  "tool_name": "execute_bash",
+  "tool_input": { "command": "terraform apply -auto-approve", "summary": "Apply infra changes" }
+}

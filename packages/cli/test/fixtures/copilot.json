@@ -1,0 +1,8 @@
+{
+  "timestamp": 1757090000000,
+  "cwd": "/Users/dev/app",
+  "sessionId": "5d6e7f80-9a1b-4c2d-8e3f-4a5b6c7d8e9f",
+  "hookEventName": "preToolUse",
+  "toolName": "shell",
+  "toolArgs": { "command": "git push origin main", "description": "Push to main" }
+}

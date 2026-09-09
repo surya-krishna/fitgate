@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-sea/
+.next/
+out/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.claude/
+.turbo/
+*.tsbuildinfo
+.fitgate/

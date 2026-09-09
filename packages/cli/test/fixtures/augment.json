@@ -1,0 +1,7 @@
+{
+  "session_id": "aug-7f8e9d0c",
+  "cwd": "/Users/dev/app",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "save-file",
+  "tool_input": { "file_path": "src/index.ts", "instructions": "Create the entry point" }
+}

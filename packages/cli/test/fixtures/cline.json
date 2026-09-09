@@ -1,0 +1,12 @@
+{
+  "clineVersion": "3.40.0",
+  "hostVersion": "1.103.0",
+  "hookName": "PreToolUse",
+  "taskId": "1757090000000",
+  "workspaceRoots": ["/Users/dev/app"],
+  "timestamp": 1757090000000,
+  "preToolUse": {
+    "toolName": "execute_command",
+    "parameters": { "command": "npm test", "requires_approval": "true" }
+  }
+}

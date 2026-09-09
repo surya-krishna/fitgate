@@ -1,0 +1,53 @@
+{
+  "name": "fitgate",
+  "version": "0.1.0",
+  "description": "Gate your coding agent's approval prompts behind micro-workouts. CLI + local daemon + agent hooks.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "bin": {
+    "fitgate": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.10"
+  },
+  "keywords": [
+    "fitness",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "codex",
+    "gemini-cli",
+    "mcp",
+    "hooks",
+    "developer-health"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "dev": "tsx src/index.ts",
+    "lint": "echo skip",
+    "build:sea:bundle": "node scripts/build-sea-bundle.mjs",
+    "build:sea": "node scripts/build-sea-binary.mjs"
+  },
+  "dependencies": {
+    "@fitgate/llm": "workspace:*",
+    "@fitgate/shared": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "commander": "^14.0.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "esbuild": "^0.24.2",
+    "postject": "1.0.0-alpha.6",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

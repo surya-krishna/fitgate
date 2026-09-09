@@ -1,0 +1,7 @@
+{
+  "agent_action_name": "pre_run_command",
+  "trajectory_id": "traj_0123456789abcdef",
+  "execution_id": "exec_fedcba9876543210",
+  "timestamp": "2026-09-05T10:00:00Z",
+  "tool_info": { "command_line": "docker compose up -d", "cwd": "/Users/dev/app" }
+}

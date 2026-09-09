@@ -1,0 +1,65 @@
+name: Release binaries
+# Standalone `fitgate` executables — no Node.js install required to run them.
+# Built with Node's Single Executable Applications (SEA) feature: each OS in
+# the matrix injects the CLI bundle into ITS OWN native node binary, since SEA
+# injection embeds a real platform Node runtime (no cross-compiling from one
+# host). Triggered by pushing a `v*` tag, e.g. `git tag v0.2.0 && git push --tags`.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            asset: fitgate-linux-x64.tar.gz
+          - os: windows-latest
+            asset: fitgate-windows-x64.zip
+          - os: macos-latest # arm64 (Apple Silicon) runner
+            asset: fitgate-macos-arm64.tar.gz
+          - os: macos-13 # x64 (Intel) runner
+            asset: fitgate-macos-x64.tar.gz
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build:packages
+      - run: pnpm --filter fitgate build:sea:bundle
+      - run: pnpm --filter fitgate build:sea
+
+      - name: Package (unix)
+        if: runner.os != 'Windows'
+        working-directory: packages/cli/dist-sea
+        run: tar -czf ../../../${{ matrix.asset }} fitgate
+
+      - name: Package (windows)
+        if: runner.os == 'Windows'
+        working-directory: packages/cli/dist-sea
+        run: Compress-Archive -Path fitgate.exe -DestinationPath ../../../${{ matrix.asset }}
+        shell: pwsh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset }}
+          path: ${{ matrix.asset }}
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { path: artifacts, merge-multiple: true }
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*
+          generate_release_notes: true

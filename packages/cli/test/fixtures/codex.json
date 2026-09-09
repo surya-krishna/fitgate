@@ -1,0 +1,8 @@
+{
+  "session_id": "0b1c2d3e-4f50-4617-8293-a4b5c6d7e8f9",
+  "turn_id": "turn_0007",
+  "cwd": "/Users/dev/app",
+  "hook_event_name": "PermissionRequest",
+  "tool_name": "shell",
+  "tool_input": { "command": ["bash", "-lc", "pytest -q"], "workdir": "/Users/dev/app", "description": "Run the test suite" }
+}

@@ -1,0 +1,8 @@
+{
+  "conversation_id": "c1b2a3d4-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+  "generation_id": "9a8b7c6d-5e4f-4d3c-2b1a-0f9e8d7c6b5a",
+  "hook_event_name": "beforeShellExecution",
+  "workspace_roots": ["/Users/dev/app"],
+  "command": "rm -rf node_modules && pnpm install",
+  "cwd": "/Users/dev/app"
+}

@@ -1,0 +1,5 @@
+{
+  "tool": "Bash",
+  "arguments": { "cmd": "git rebase -i HEAD~3" },
+  "threadId": "T-8c4a2b1f"
+}
