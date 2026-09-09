@@ -4,6 +4,17 @@
 
 # FitGate
 
+<p align="center">
+  <a href="https://github.com/surya-krishna/fitgate/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/surya-krishna/fitgate/ci.yml?branch=main&label=CI&logo=github" alt="CI"></a>
+  <a href="https://www.npmjs.com/package/fitgate"><img src="https://img.shields.io/npm/v/fitgate?color=cb3837&logo=npm&label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/fitgate"><img src="https://img.shields.io/npm/dm/fitgate?color=blue&label=downloads" alt="npm downloads"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License: AGPL-3.0"></a>
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E%3D20.10-339933?logo=node.js&logoColor=white" alt="Node >=20.10"></a>
+  <a href="../../releases"><img src="https://img.shields.io/github/v/release/surya-krishna/fitgate?label=release" alt="Latest release"></a>
+  <a href="../../stargazers"><img src="https://img.shields.io/github/stars/surya-krishna/fitgate?style=flat&color=yellow" alt="GitHub stars"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+</p>
+
 **Make programmers healthy. One approval prompt at a time.**
 
 FitGate intercepts the moment your AI coding agent — Claude Code, Cursor, GitHub Copilot, Codex, Gemini CLI, Windsurf and others — stops to ask you *"Do you want to proceed?"*, and gates that approval behind a 10-second-to-2-minute micro-workout: push-ups, squats, a stretch, a walk to the water cooler, a 20-20-20 eye rest.
