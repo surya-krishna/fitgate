@@ -22,7 +22,7 @@ jobs:
             asset: fitgate-windows-x64.zip
           - os: macos-latest # arm64 (Apple Silicon) runner
             asset: fitgate-macos-arm64.tar.gz
-          - os: macos-13 # x64 (Intel) runner
+          - os: macos-15-large # x64 (Intel) runner — macos-13 was retired from GitHub's fleet
             asset: fitgate-macos-x64.tar.gz
     steps:
       - uses: actions/checkout@v4
