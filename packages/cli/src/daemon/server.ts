@@ -387,7 +387,10 @@ export async function startDaemon(opts: DaemonOptions = {}): Promise<RunningDaem
     });
     if (opts.pidFile !== false) removeIfExists(files.daemonPid());
     log("daemon stopped");
-    logStream.end();
+    await new Promise<void>((resolve) => {
+      logStream.on("close", resolve);
+      logStream.end();
+    });
   };
 
   return { port: engine.port, url: engine.url, close };
