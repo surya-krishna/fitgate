@@ -60,7 +60,7 @@ Skipping is always allowed (**Skip** button / `fitgate skip`). By default a skip
   "useDefaultPoolWhenNoPlan": true,   // built-in bodyweight pool when no plan is synced
   "rules": {
     "cooldownMinutes": 20,            // minimum minutes between gates
-    "maxGatesPerDay": 12,
+    "maxGatesPerDay": 24,
     "quietHours": [{ "start": "22:00", "end": "07:00" }],
     "waitTimeoutSeconds": 480,        // how long the hook waits for you
     "onSkip": "pass"                  // or "deny" for hard mode

@@ -102,7 +102,7 @@ export const GateRules = z.object({
   /** Minimum minutes between two gates (so approvals aren't gated every 30s). */
   cooldownMinutes: z.number().int().min(0).max(240).default(20),
   /** Hard cap on gates served per calendar day (local time). */
-  maxGatesPerDay: z.number().int().min(0).max(100).default(12),
+  maxGatesPerDay: z.number().int().min(0).max(100).default(24),
   /** Local-time quiet hours during which gates always pass, "HH:MM". */
   quietHours: z
     .array(z.object({ start: z.string().regex(/^\d{2}:\d{2}$/), end: z.string().regex(/^\d{2}:\d{2}$/) }))

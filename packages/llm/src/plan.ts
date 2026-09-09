@@ -140,7 +140,7 @@ Guidelines:
 - Each task must be doable at a desk in office clothes with no warm-up. Include 1–2 lines of form cues.
 - Use "weight" to bias toward the user's goals; use "maxPerDay" to cap strength volume.
 - Write "contraindications" the user must respect and "safetyNotes" for the clinician (why each choice is safe for this profile).
-- Suggest gate "rules": cooldownMinutes (15–45), maxGatesPerDay (6–16).
+- Suggest gate "rules": cooldownMinutes (15–45), maxGatesPerDay (6–24).
 - No medical diagnosis. No supplements. No claims of treating conditions.
 Respond with JSON only.`;
 
