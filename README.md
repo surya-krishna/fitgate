@@ -106,7 +106,7 @@ The interceptor is the whole growth engine — the more places it runs, the more
 
 The AGPL's copyleft is what keeps improvements in the commons: if you modify FitGate and let others use your version over a network, you owe those users your source. That obligation is the only string attached, and it's aimed at people who would take the work private — not at people using it.
 
-If your organisation wants to build on FitGate without the copyleft obligation, we sell commercial licenses; that revenue funds the free version. Contact Adroytz Technology Services LLP at <krish.surya99@gmail.com>. Dual licensing is also why contributions are covered by a [CLA](CLA.md).
+If your organisation wants to build on FitGate without the copyleft obligation, we sell commercial licenses; that revenue funds the free version. Contact Adroytz Technology Services LLP at <support@adroytz.com>. Dual licensing is also why contributions are covered by a [CLA](CLA.md).
 
 FitGate Cloud (hosted, optional) is a separate server built on the same core — see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for where the boundary sits.
 
