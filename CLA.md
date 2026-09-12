@@ -88,7 +88,7 @@ with the exact text and record your signature against your GitHub account, so yo
 only do this once.
 
 **Contributing on behalf of a company?** Have someone authorised to bind the
-company email <krish.surya99@gmail.com> with the company name, the GitHub
+company email <support@adroytz.com> with the company name, the GitHub
 usernames covered, and confirmation that they accept these terms.
 
 Questions about any of this are welcome — open a discussion or email us before

@@ -106,7 +106,7 @@ The interceptor is the whole growth engine — the more places it runs, the more
 
 The AGPL's copyleft is what keeps improvements in the commons: if you modify FitGate and let others use your version over a network, you owe those users your source. That obligation is the only string attached, and it's aimed at people who would take the work private — not at people using it.
 
-If your organisation wants to build on FitGate without the copyleft obligation, we sell commercial licenses; that revenue funds the free version. Contact Adroytz Technology Services LLP at <krish.surya99@gmail.com>. Dual licensing is also why contributions are covered by a [CLA](CLA.md).
+If your organisation wants to build on FitGate without the copyleft obligation, we sell commercial licenses; that revenue funds the free version. Contact Adroytz Technology Services LLP at <support@adroytz.com>. Dual licensing is also why contributions are covered by a [CLA](CLA.md).
 
 FitGate Cloud (hosted, optional) is a separate server built on the same core — see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for where the boundary sits.
 
@@ -124,5 +124,5 @@ Copyright (c) 2026 Adroytz Technology Services LLP.
 
 FitGate is free and open source software under the **[GNU Affero General Public License v3.0](LICENSE)** — free to use, run, modify and share, for anyone, commercial use included. If you run a modified version as a network service, AGPL section 13 requires you to offer your users the corresponding source.
 
-Commercial licenses without the copyleft obligation are available from Adroytz Technology Services LLP — <krish.surya99@gmail.com>. Contributions are licensed under the [CLA](CLA.md).
+Commercial licenses without the copyleft obligation are available from Adroytz Technology Services LLP — <support@adroytz.com>. Contributions are licensed under the [CLA](CLA.md).
 "# fitgate" 

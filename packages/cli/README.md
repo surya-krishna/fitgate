@@ -126,4 +126,4 @@ Copyright (c) 2026 Adroytz Technology Services LLP.
 
 Free and open source under the **GNU Affero General Public License v3.0** — free to use, run, modify and share, commercial use included. Running a modified version as a network service triggers AGPL section 13: you must offer your users the corresponding source.
 
-Commercial licenses without the copyleft obligation are available — <krish.surya99@gmail.com>.
+Commercial licenses without the copyleft obligation are available — <support@adroytz.com>.
